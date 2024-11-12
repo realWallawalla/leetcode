@@ -3,15 +3,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MissingNumber {
+public class Solution {
   public static void main(String[] args) {
     int[] nums = new int[args.length];
     for (int i = 0; i < args.length; i++) {
       nums[i] = Integer.parseInt(args[i]);
     }
-    MissingNumber missingNumber = new MissingNumber();
-    System.out.println(missingNumber.findMissingNumber(nums));
-    System.out.println(missingNumber.findMissingNumber2(nums));
+    Solution solution = new Solution();
+    System.out.println(solution.findMissingNumber(nums));
+    System.out.println(solution.findMissingNumber2(nums));
   }
 
   private int findMissingNumber(int[] nums) {
