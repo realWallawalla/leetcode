@@ -1,4 +1,6 @@
-import../ util / ConvertInputUtil;
+import ConvertInputUtil;
+import java.util.Arrays;
+
 public class Solution {
   public static void main(String[] args) {
     Convert int[] nums = new int[args.length];
