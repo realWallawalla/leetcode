@@ -1,10 +1,10 @@
+package src.problems.single_number_136;
+
+import src.utils.ConvertInputUtil;
 
 public class Solution {
   public static void main(String[] args) {
-    int[] nums = new int[args.length];
-    for (int i = 0; i < nums.length; i++) {
-      nums[i] = Integer.parseInt(args[i]);
-    }
+    int[] nums = ConvertInputUtil.convertStingNumsToInts(args);
     Solution solution = new Solution();
     int result = solution.singleNumber(nums);
     int result2 = solution.singleNumber2(nums);

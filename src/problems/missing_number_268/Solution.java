@@ -1,16 +1,11 @@
-package problem.missing_number_268;
+package src.problems.missing_number_268;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import src.utils.ConvertInputUtil;
 
 public class Solution {
   public static void main(String[] args) {
-    int[] nums = new int[args.length];
-    for (int i = 0; i < args.length; i++) {
-      nums[i] = Integer.parseInt(args[i]);
-    }
+    int[] nums = ConvertInputUtil.convertStingNumsToInts(args);
     Solution solution = new Solution();
     System.out.println(solution.findMissingNumber(nums));
     System.out.println(solution.findMissingNumber2(nums));

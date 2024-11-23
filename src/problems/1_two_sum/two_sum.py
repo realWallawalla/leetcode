@@ -19,7 +19,7 @@ parser.add_argument(
 )
 
 
-class Solution:
+class src.problems.range_sum_query_303.Solution:
     def two_sum(self, nums: List[int], target: int) -> List[int]:
         for i in range(0, len(nums) - 1):
             for ii in range(i + 1, len(nums)):
@@ -41,6 +41,6 @@ class Solution:
 if __name__ == "__main__":
     args = parser.parse_args()
     if args.arg3:
-        print(Solution().two_sum_efficient(args.arg2, args.arg1))
+        print(src.problems.range_sum_query_303.Solution().two_sum_efficient(args.arg2, args.arg1))
     else:
-        print(Solution().two_sum(args.arg2, args.arg1))
+        print(src.problems.range_sum_query_303.Solution().two_sum(args.arg2, args.arg1))

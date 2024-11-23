@@ -1,9 +1,10 @@
+package src.problems.best_time_to_buy_121;
+
+import src.utils.ConvertInputUtil;
+
 public class Solution {
   public static void main(String[] args) {
-    int[] prices = new int[args.length];
-    for (int i = 0; i < prices.length; i++) {
-      prices[i] = Integer.parseInt(args[i]);
-    }
+    int[] prices = ConvertInputUtil.convertStingNumsToInts(args);
     Solution solution = new Solution();
     int maxProfit = solution.maxProfit(prices);
     System.out.println(maxProfit);

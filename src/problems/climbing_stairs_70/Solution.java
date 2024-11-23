@@ -1,6 +1,7 @@
+package src.problems.climbing_stairs_70;
+
 public class Solution {
   public static void main(String[] args) {
-    int[] nums = new int[args.length];
     int input = Integer.parseInt(args[0]);
     Solution solution = new Solution();
     int result = solution.climbingStairs(input);

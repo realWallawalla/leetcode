@@ -1,4 +1,4 @@
-package util;
+package src.utils;
 
 public class ConvertInputUtil {
   public static int[] convertStingNumsToInts(String[] input) {

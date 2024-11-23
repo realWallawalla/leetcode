@@ -1,13 +1,13 @@
-import java.util.Arrays;
+package src.problems.find_all_numbers_448;
+
+import src.utils.ConvertInputUtil;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class Solution {
   public static void main(String[] args) {
-    int[] nums = new int[args.length];
-    for (int i = 0; i < nums.length; i++) {
-      nums[i] = Integer.parseInt(args[i]);
-    }
+    int[] nums = ConvertInputUtil.convertStingNumsToInts(args);
     Solution solution = new Solution();
     Set<Integer> output = solution.findDisappearedNumbers(nums);
     Set<Integer> output2 = solution.findDisappearedNumbers2(nums);
